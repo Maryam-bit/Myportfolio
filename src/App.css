@@ -1,38 +1,460 @@
-.App {
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: white;
+}
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                                   Home                                    */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+.home .navbar {
+  box-shadow: 2px 1px 10px lightgrey;
+  padding: 11px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+}
+.home .navbar img {
+  width: 150px;
+  margin-left: 12px;
+}
+.home .navbar .nav-item {
+  font-size: 13px;
+  color: #424242 !important;
+  font-weight: 700;
+  padding-right: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home a {
+  color: grey;
+  text-decoration: none;
+}
+.home a:hover {
+  text-decoration: none;
+  color: #03a9fc;
+}
+.home .navbar .nav-item .active {
+  text-decoration: none;
+  color: #03a9fc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home .text {
+  margin-top: 40%;
+  margin-left: 10%;
+  transform: translate((-50%, -50%));
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.home .text p {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline;
+  color: #012c42;
+  color: #064566;
+}
+.home .text h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: #012c42;
+  color: #064566;
+}
+.home .text img {
+  margin-top: -2px;
+}
+.home .text button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #0282c7;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home .image {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home .image img {
+  position: absolute;
+  top: 75px;
+  right: 64px;
+  width: 500px;
+}
+
+
+
+
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                                   About                                   */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+
+.about {
+  padding-top: 100px;
+}
+.about .heading,
+.skills .heading {
+  text-align: center;
+}
+
+.about .heading h1,
+.skills .heading h1,
+.services .heading h1,
+.portfolio .heading h1,
+.contact .heading h1,
+.achievements .heading h1 {
+  color: #064566;
+  font-weight: 700;
+}
+.about .heading img,
+.skills .heading img,
+.services .heading img,
+.portfolio .heading img,
+.contact .heading img,
+.achievements .heading img {
+  width: 60px;
+  margin-top: -20px;
+}
+.about .img .imgBorder {
+  border: 6px solid #0282c7;
+  padding: 96px;
+  padding-left: 110px;
+  border-radius: 9px;
+  margin-left: -178px;
+  margin-top: -60px;
+  box-shadow: inset 2px 2px 15px grey, 2px 2px 15px #ffc4f2;
+}
+
+.about .text h1 {
+  font-size: 17px;
+  font-weight: 800;
+}
+.about .text .aboutme {
+  font-size: 14.5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  color: grey !important;
+  font-size: 15px;
+  font-family: serif;
+  margin-top: 15px;
+  line-height: 2;
+}
+.about .text .title {
+  font-weight: 500;
+  font-size: 16px;
+}
+.about .text .word {
+  color: grey;
+  font-size: 15.5px;
+}
+.about .rev img {
+  box-shadow: 2px 2px 15px lightgrey;
+  border-radius: 9px;
+  width: 400px;
+  transform: rotate(10deg);
+  margin: 10px;
+}
+.about .rev .img {
+  transform: rotate(1deg);
+}
+.about .text button {
+  border: none;
+  background-color: #0282c7;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+
+
+
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                                   Skills                                  */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+.skills {
+  width: 100%;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+.skills .child {
+  background-color: white;
+  box-shadow: 10px 10px 10px lightgrey, -3px -3px 10px lightgrey;
+  padding-top: 26px;
+  border-radius: 7px;
+}
+.skills .container img {
+  width: 100px;
+}
+.skills .progress-bar {
+  background-color: white;
+  padding-top: 25px;
+}
+.skills .container p {
+  font-weight: 700;
+  position: relative;
+  top: 15px;
+}
+.skills .progress-bar h2 {
+  text-decoration: none !important;
+  display: block !important;
+  margin: 0em !important;
+  margin-top: -50px !important;
+  margin-left: -59px !important;
+  color: grey !important;
+  font-size: 15px !important;
+}
+
+
+
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                                 services                                  */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+
+.services {
+  padding-top: 100px;
+}
+
+.services .heading {
+  text-align: center;
+}
+.services .cardd i {
+  position: relative;
+  right: 55.4px;
+  top: 3px;
+  color: white;
+  font-size: 19px;
+}
+.services .cardd img {
+  width: 90px;
+}
+.services .cardd h3 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 12px;
+  color: #424242;
+}
+
+.services .cardd {
+  background-color: white;
+  box-shadow: 5px 5px 10px #d9dbdb, -5px -5px 10px #d9dbdb;
+  border: 1px solid #f0f0f0;
+}
+.services .cards {
+  background-color: #e0e0e0;
+  padding: 15px;
+  box-shadow: 0 1px 3px #b3b4b5;
+  box-shadow: 4px 4px 6px 0 white inset,
+    -5px -5px 8px 0 rgba(0, 0, 0, 0.19) inset;
+  border-bottom: 7px solid #6d6fde;
+  border-radius: 8px;
+}
+
+
+
+
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                                 Portfolio                                  */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+.portfolio {
+  background-color: white;
+  padding-top: 100px;
+}
+.heading {
+  text-align: center;
+}
+.portfolio .container .fa-external-link {
+  font-size: 17px;
+  font-weight: 900;
+  background-color: #0282c7;
+  padding: 9px;
+  border-radius: 90px;
+  color: white;
+  margin-top: 2px;
+}
+.portfolio .container .fa-github {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: -3px;
+  background-color: #0282c7;
+  padding: 8px;
+  color: white;
+  border-radius: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.portfolio .moreProj button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #0282c7;
+  border: none;
+  color: white;
+}
+
+
+
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                               achievements                                */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+
+.achievements {
+  padding-top: 100px;
+}
+
+
+
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                                 Contact                                   */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+.contact {
+  padding-top: 100px;
+}
+
+.contact .cardd .icon {
+  padding: 26px;
+  background-color: #424242;
+  background-color: #0282c7;
+  border-radius: 90px;
+  padding-left: 28px;
+  padding-right: 28px;
+  color: white;
+  font-size: 27px;
+}
+.contact .cardd .sm {
+  font-size: 17px;
+  padding: 7px;
+  background-color: #424242;
+  background-color: #0282c7;
+  margin: 4px;
+  border-radius: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+.contact .cardd h5 {
+  color: #424242;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.contact .cardd p {
+  font-size: 14.5;
+  color: grey;
+}
+
+
+
+
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                                  footer                                   */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+.footer {
+  margin-top: 25px;
+  box-shadow: 2px 2px 7px grey;
+  padding: 15px;
+}
+.footer .title {
+  font-weight: 600;
+}
+.footer .word {
+  color: #0282c7;
+  font-weight: 600;
+}
+
+
+
+
+
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+/*                              responsiveness                                  */
+/* // ======================°°°°°°°°°°°°°°°°°°°°°°°========================= */
+
+@media (max-width: 1200px) {
+  .home .image img {
+    width: 400px;
+    top: 90px;
   }
-  to {
-    transform: rotate(360deg);
+  .home .text {
+    margin-top: 49%;
   }
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 1050px) {
+  .home .image img {
+    width: 310px;
+    top: 130px;
+  }
+  .home .text {
+    margin-top: 56%;
+  }
+}
+@media (max-width: 991px) {
+  .home .navbar .nav-item {
+    font-size: 16px;
+    border-bottom: 1px solid #ededed;
+  }
+}
+@media (max-width: 767px) {
+  .home .image {
+    display: none;
+  }
+  .home .text {
+    margin-top: 33%;
+  }
+  .about {
+    padding-top: 30px;
+  }
+  .about .text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .services {
+    padding-top: 90px;
+  }
+  .skills {
+    padding-top: 90px;
+  }
+  .portfolio {
+    padding-top: 90px;
+  }
+  .achievements {
+    padding-top: 90px;
+  }
+  .contact {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .text {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 594px) {
+  .home .text {
+    margin-top: 48%;
+  }
+}
+@media (max-width: 500px) {
 }
