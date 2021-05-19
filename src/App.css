@@ -30,6 +30,7 @@ body {
 .home a {
   color: grey;
   text-decoration: none;
+  cursor: pointer;
 }
 .home a:hover {
   text-decoration: none;
@@ -261,7 +262,12 @@ body {
   border-bottom: 7px solid #6d6fde;
   border-radius: 8px;
 }
-
+.services .cardd{
+  transition: 1s;
+}
+.services .cardd:hover{
+transform: skewy(3deg);
+}
 
 
 
@@ -272,6 +278,12 @@ body {
 .portfolio {
   background-color: white;
   padding-top: 100px;
+}
+.portfolio .card , .achievements .card{
+  transition: 1s;
+}
+.portfolio .card:hover, .achievements .card:hover{
+  transform: scale(1.05);
 }
 .heading {
   text-align: center;

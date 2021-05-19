@@ -5,6 +5,7 @@ import img3 from "../img/p3.jpg";
 import img4 from "../img/p4.jpg";
 import img5 from "../img/p5.PNG";
 import img6 from "../img/p6.PNG";
+import img7 from '../img/p7.jpg';
 import hd from "../img/hdd.png";
 
 
@@ -57,7 +58,7 @@ export default function Portfolio() {
                 <div class="card-body text-center">
                   <h5 class="card-title">Expense Tracker</h5>
                   <a
-                    href="http://maryam-expense-tracker.surge.sh/"
+                    href="http://expense-tracker-2004.surge.sh/"
                     target="_blank"
                   >
                     <i class="fa fa-external-link" aria-hidden="true"></i>
@@ -68,7 +69,7 @@ export default function Portfolio() {
                   {"\u00A0"}
                   {"\u00A0"}
                   <a
-                    href="https://github.com/Maryam-bit/expense-Trancker"
+                    href="https://github.com/Maryam-bit/expense-tracker-context-api"
                     target="_blank"
                   >
                     <i class="fa fa-github" aria-hidden="true"></i>
@@ -132,7 +133,7 @@ export default function Portfolio() {
                 />
                 <div class="card-body text-center">
                   <h5 class="card-title">Shoe Store</h5>
-                  <a href="http://shoestore009.surge.sh/" target="_blank">
+                  <a href="http://shoestore2004-.surge.sh/" target="_blank">
                     <i class="fa fa-external-link" aria-hidden="true"></i>
                   </a>
                   {"\u00A0"}
@@ -141,7 +142,7 @@ export default function Portfolio() {
                   {"\u00A0"}
                   {"\u00A0"}
                   <a
-                    href="https://github.com/Maryam-bit/shoe-store"
+                    href="https://github.com/Maryam-bit/shoe-store-in-context"
                     target="_blank"
                   >
                     <i class="fa fa-github" aria-hidden="true"></i>
@@ -261,6 +262,42 @@ export default function Portfolio() {
             </div>
           </div>
 
+
+          <div className="col-md-4">
+            <div
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+            >
+              <div class="card mb-5 shadow ml-3 mr-3">
+                <img
+                  class="card-img-top pl-4 pr-4"
+                  src={img7}
+                  alt="Card image cap"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Crwn Clothing Store</h5>
+                  <a
+                    href="https://crwn-clowthing-live.herokuapp.com/"
+                    target="_blank"
+                  >
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                  {"\u00A0"}
+                  {"\u00A0"}
+                  {"\u00A0"}
+                  {"\u00A0"}
+                  {"\u00A0"}
+                  <a
+                    href="https://github.com/Maryam-bit/crown-clothing"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
 
